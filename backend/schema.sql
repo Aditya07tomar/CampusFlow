@@ -254,13 +254,12 @@ CREATE INDEX idx_marketplace_status ON marketplace(status);
 -- ══════════════════════════════════════════════════
 
 -- Seed demo users (password is 'password123' hashed with bcrypt)
--- $2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy
 INSERT IGNORE INTO users (id, name, email, password, roll_no, role_id) VALUES
-    (1, 'Admin CampusFlow',  'admin@iiita.ac.in',    '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'ADMIN001', 2),
-    (2, 'Aditya Tomar',      'aditya@iiita.ac.in',   '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'IIT2022001', 1),
-    (3, 'Priya Sharma',      'priya@iiita.ac.in',    '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'IIT2022015', 1),
-    (4, 'Rahul Verma',       'rahul@iiita.ac.in',    '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'IIT2023042', 1),
-    (5, 'Sneha Patel',       'sneha@iiita.ac.in',    '$2a$10$N9qo8uLOickgx2ZMRZoMyeIjZAgcfl7p92ldGxad68LJZdL17lhWy', 'IIT2023078', 1);
+    (1, 'Admin CampusFlow',  'admin@iiita.ac.in',    '$2a$10$6Ucec5pEp7Wno30iEjCnDOvguynU1p8RTp3tO90j58VrP3Q/CdHUK', 'ADMIN001', 2),
+    (2, 'Aditya Tomar',      'aditya@iiita.ac.in',   '$2a$10$6Ucec5pEp7Wno30iEjCnDOvguynU1p8RTp3tO90j58VrP3Q/CdHUK', 'IIT2022001', 1),
+    (3, 'Priya Sharma',      'priya@iiita.ac.in',    '$2a$10$6Ucec5pEp7Wno30iEjCnDOvguynU1p8RTp3tO90j58VrP3Q/CdHUK', 'IIT2022015', 1),
+    (4, 'Rahul Verma',       'rahul@iiita.ac.in',    '$2a$10$6Ucec5pEp7Wno30iEjCnDOvguynU1p8RTp3tO90j58VrP3Q/CdHUK', 'IIT2023042', 1),
+    (5, 'Sneha Patel',       'sneha@iiita.ac.in',    '$2a$10$6Ucec5pEp7Wno30iEjCnDOvguynU1p8RTp3tO90j58VrP3Q/CdHUK', 'IIT2023078', 1);
 
 -- ── Seed Announcements ──
 INSERT IGNORE INTO announcements (id, title, content, tag, created_by) VALUES
